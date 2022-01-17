@@ -117,6 +117,9 @@
     .about .wrapper .right .title {
         font-size: 30px;
     }
+    .about .wrapper .item .right .title {
+        font-size: 18px;
+    }
     .portfolio .card {
         width: 315px;
     }
