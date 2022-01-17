@@ -93,6 +93,9 @@
     .services .box .card .title {
         font-size: 30px;
     }
+    .about .wrapper .item .right .title {
+        font-siza: 18px;
+    }    
     .portfolio {
         padding: 80px 0;
     }
