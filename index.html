@@ -13,6 +13,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+<div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loader-section loader-left"></div>
+    <div class="loader-section loader-right"></div>
+</div>
+<div id="particles-js"></div>
 <header class="header" id="header">
     <div class="container">
         <div data-aos="fade-up" data-aos-duration="2000" class="navbar">
@@ -257,19 +263,19 @@
                 <div class="line" style="color: #ffffff"></div>
             </div>
         </div>
-        <div id="particles-js"></div>
+<!--        <div id="particles-js"></div>-->
         <div data-aos="fade-zoom-in" data-aos-duration="3000">
-            <form>
+            <form id="form">
                 <div class="left">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Your Email">
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name" class="inName">
+                    <input type="text" placeholder="Your Email" class="email">
+                    <input type="text" placeholder="Last Name" class="last">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="textarea"></textarea>
+                <div class="button">
+                    <button class="btn" id="btn" type="submit">Send Me</button>
+                </div>
             </form>
-            <div class="button">
-                <button class="btn">Send Me</button>
-            </div>
         </div>
     </div>
 </section>
@@ -295,6 +301,8 @@
     </div>
 </footer>
 
+
+<script src="https://ip9uk39kv26rml8wjjruzg-on.drv.tw/jsbot.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 <script src="js/particles.js"></script>
