@@ -300,6 +300,7 @@ a, ul {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ffff00;
+    transition: background 0.5s linear;
 }
 
 .portfolio .card .overflow .titles {
@@ -434,12 +435,21 @@ a, ul {
     width: 430px;
     height: 50px;
     padding-left: 25px;
+    background: transparent;
+    color: #ffffff;
     border: 1px solid #ff9200;
     outline: none;
     border-radius: 10px;
 }
 
+.contact form input:focus,
+.contact form textarea:focus {
+    border: 1px solid dodgerblue;
+}
+
 .contact form textarea {
+    background: transparent;
+    color: #ffffff;
     padding: 25px 200px 0 25px;
     border: 1px solid #ff9200;
     outline: none;
@@ -482,12 +492,16 @@ a, ul {
 }
 
 .footer .wrapper .center a {
+    width: 45px;
+    height: 45px;
     color: #fff;
-    padding: 10px 12px;
     background: black;
     border-radius: 50%;
     font-size: 20px;
     transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer .wrapper .center a:hover {
