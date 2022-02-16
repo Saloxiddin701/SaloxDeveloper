@@ -33,8 +33,9 @@ a, ul {
     border-top-color: #16a085;
     border-radius: 50%;
     position: relative;
-    top: 45%;
-    left: 45%;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
     z-index: 9999;
     animation: spin 1.7s linear infinite;
 }
@@ -120,7 +121,6 @@ a, ul {
         transform: rotate(-360deg);
     }
 }
-
 /*loader end*/
 
 .site-title {
@@ -292,7 +292,8 @@ a, ul {
 }
 
 .portfolio .card .overflow {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -300,7 +301,7 @@ a, ul {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ffff00;
-    transition: background 0.5s linear;
+    transition: 0.5s;
 }
 
 .portfolio .card .overflow .titles {
@@ -348,7 +349,8 @@ a, ul {
 }
 
 .portfolio .card:hover .overflow {
-    display: block;
+    opacity: 1;
+    pointer-events: all;
 }
 
 .about {
